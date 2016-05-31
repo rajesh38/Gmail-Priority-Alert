@@ -1,0 +1,22 @@
+{
+  "name": "Gmail Priority Alert",
+  "manifest_version": 2,
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/mail/u/*"
+      ],
+      "js": [
+        "src/vendor/jquery.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+  }
+}
